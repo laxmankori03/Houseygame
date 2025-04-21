@@ -1,0 +1,29 @@
+body{
+    overflow-y: hidden;
+}
+.randomNumDisplayBox{
+    width: 20vw;
+    height: 20vw;
+}
+.randomNumDisplayBox h1{
+    font-size: 10vw;
+}
+@keyframes pop {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animate-pop {
+    animation: pop 0.5s ease-out;
+  }
+  
