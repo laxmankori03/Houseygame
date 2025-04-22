@@ -3,11 +3,11 @@ body{
     
 }
 .randomNumDisplayBox{
-    width: 20vw;
-    height: 20vw;
+    width: 8vw;
+    height: 8vw;
 }
 .randomNumDisplayBox h1{
-    font-size: 10vw;
+    font-size: 4vw;
 }
 @keyframes pop {
     0% {
@@ -43,3 +43,13 @@ body{
     font-size: 1rem;
   }
   
+  @media (max-width: 426px) {
+    .randomNumDisplayBox{
+      width: 20vw;
+      height: 20vw;
+    }
+    
+.randomNumDisplayBox h1{
+  font-size: 10vw;
+}
+  }
