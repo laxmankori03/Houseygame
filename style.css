@@ -28,10 +28,10 @@ body{
     animation: pop 0.5s ease-out;
   }
 
-  
+
   #boxContainer {
     display: grid;
-    grid-template-columns: repeat(8, 1fr); /* 10 buttons per row */
+    grid-template-columns: repeat(9, 1fr); /* 10 buttons per row */
     gap: 8px;
     height: 100%;
   }

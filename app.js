@@ -15,7 +15,7 @@ function restartGame() {
   const boxContainer = document.querySelector("#boxContainer");
   boxContainer.innerHTML = "";
   number.forEach((items) => {
-    boxContainer.innerHTML += `<button type="button" class="btn btn-success" id="${items}">${items}</button>`;
+    boxContainer.innerHTML += `<div class=" bg-success d-flex align-items-center justify-content-center text-white rounded" id="${items}">${items}</div>`;
   });
 
   // Shuffle the array
@@ -28,9 +28,9 @@ function restartGame() {
 
   shuffleArray(number);
 
-  const btns = document.querySelectorAll("button");
+  const btns = document.querySelectorAll("#boxContainer div");
   for (btn of btns) {
-    btn.classList.remove("btn-danger");
+    btn.classList.remove("bg-danger");
   }
   randomNumDisplayBox.innerText = "";
 }
@@ -58,7 +58,7 @@ generateNumber.addEventListener("click", () => {
 
   const uniquBox = document.getElementById(uniqeNum);
   if (uniquBox) {
-    uniquBox.classList.add("btn-danger","animate-pop");
+    uniquBox.classList.add("bg-danger","animate-pop");
     setTimeout(() => {
         uniquBox.classList.remove("animate-pop");
       }, 500);
