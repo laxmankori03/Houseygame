@@ -1,6 +1,4 @@
-body{
-    overflow-y: hidden;
-}
+
 .randomNumDisplayBox{
     width: 20vw;
     height: 20vw;
@@ -25,5 +23,18 @@ body{
   
   .animate-pop {
     animation: pop 0.5s ease-out;
+  }
+  #boxContainer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 10 buttons per row */
+    gap: 8px;
+    height: 100%;
+  }
+  
+  #boxContainer .btn {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 1rem;
   }
   

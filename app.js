@@ -27,7 +27,6 @@ function restartGame() {
   }
 
   shuffleArray(number);
-  console.log(number);
 
   const btns = document.querySelectorAll("button");
   for (btn of btns) {
